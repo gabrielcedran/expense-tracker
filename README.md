@@ -9,5 +9,5 @@ Simple expense tracker app to learn react and frontend concepts in practice.
 5. Add miragejs dependency to enable mock backend apis during development `yarn add miragejs -D`
 6. Add http client axios dependency `yarn add axios`. The advantage of using axios over raw fetch is that it provides some features on top of the native fetch api like (1) easily configurable api host and root path (by default fetch always need the complete url), (2) responses automatically converted into json, (3) interception of requests and reponses to pre or post process them (e.g in case the response is 401 redirect the user to login page and embed access token in all requests), etc. These features could be custom implemented but using a library that is widely used by the community thus broadly tested is less error prone.
 7. Add react-modal dependency to easy development of modals `yarn add react-modal`. It is always easier and safer to use libs developed and widely used by the community as they are broadly tested.
-
+8. Add polished dependency to ease stylisation via JS `yarn add polished`. Polished provides many features and helpers to easy stilisation and animation. Styled components is practically CSS inside JS thus polished works pretty well integrated with styled components.
 
