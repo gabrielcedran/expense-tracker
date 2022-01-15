@@ -34,6 +34,7 @@ export function NewTransactionModal( {isOpen, onRequestClose}: NewTransactionMod
                         //className={type === 'deposit' ? 'active' : ''} - traditional way 
                         // method leveraging styled components: 
                         isActive={type==='deposit'}
+                        activeColor='green'
                         onClick={() => setType('deposit')}>
                         <img src={incomeImg} alt="Entrada" />
                         <span>Entrada</span>
@@ -43,6 +44,7 @@ export function NewTransactionModal( {isOpen, onRequestClose}: NewTransactionMod
                         type='button' 
                         //className={type === 'withdraw' ? 'active' : ''} 
                         isActive={type==='withdraw'}
+                        activeColor='red'
                         onClick={() => setType('withdraw')}>
                         <img src={outcomeImg} alt="Saida" />
                         <span>Saida</span>
